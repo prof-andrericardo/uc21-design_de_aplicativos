@@ -1,240 +1,184 @@
-# 📚 Aula 2: Conceitos Fundamentais de Banco de Dados
+# 📝 **Capítulo 2 - Documentação de Requisitos**
 
-## ✨ 2.1 Frase Reflexiva
+> "A melhor maneira de prever o futuro é inventá-lo." – Alan Kay
 
-> "Sem bancos de dados, a informação se torna caos. A organização dos dados é o primeiro passo para a inovação." — Autor Desconhecido
+## 📌 **2.1 Introdução**
 
-## 🏁 2.2 Introdução
+A documentação de requisitos é um dos passos mais importantes no desenvolvimento de um sistema. Imagine tentar construir uma casa sem uma planta detalhada: haveria confusão, atrasos e erros. Da mesma forma, um sistema sem uma documentação clara pode gerar problemas como:
 
-Os bancos de dados são o **coração** de sistemas digitais modernos, permitindo que informações sejam armazenadas, organizadas e recuperadas de maneira eficiente. Desde redes sociais até sistemas bancários, os bancos de dados garantem que as aplicações funcionem de maneira confiável e segura.
+- Funcionalidades mal compreendidas ou mal implementadas.
+- Atrasos no desenvolvimento devido a mudanças inesperadas.
+- Dificuldade na manutenção e evolução do sistema.
 
-Nesta aula, exploraremos os principais **conceitos estruturais de bancos de dados**, incluindo **tipos de dados, componentes de um banco relacional e criação de tabelas**. Além disso, daremos **os primeiros passos no MySQL**, aplicando os conceitos aprendidos.
+### **Objetivo do Capítulo**
 
-------
+Neste capítulo, você aprenderá:
 
-## 🔍 2.3 Desenvolvimento do Conteúdo
-
-### **📖 2.3.1 O que é um Banco de Dados?**
-
-📌 **Definição:** Um banco de dados é uma coleção estruturada de informações, organizadas para facilitar **acesso, gerenciamento e atualização**.
-
-📌 **Exemplo Prático:** Imagine uma biblioteca. Cada **prateleira** representa uma **tabela**, cada **livro** é um **registro** e cada **capítulo** é um **atributo**.
-
-📌 **Objetivo:** Garantir armazenamento eficiente, seguro e de fácil recuperação dos dados.
+- O que é documentação de requisitos e por que ela é essencial.
+- Tipos de documentos de requisitos utilizados no desenvolvimento de software.
+- Como organizar as informações corretamente para garantir a clareza e eficiência do projeto.
+- Exemplos práticos aplicados ao **Sistema de Gerenciamento de Sala de Aula (SGSA)**.
 
 ------
 
-### **🗄️ 2.3.2 Tipos de Dados em um Banco de Dados**
+## 🎯 **2.2 O que é Documentação de Requisitos?**
 
-Os bancos de dados armazenam diferentes tipos de informações, e esses dados podem ser classificados em três categorias principais: **dados estruturados, não estruturados e semi-estruturados**. Vamos explorar cada um deles com detalhes.
+A documentação de requisitos é o **registro formal de todas as funcionalidades e restrições do sistema**, garantindo que todos os envolvidos no projeto (clientes, desenvolvedores, testadores e gestores) compreendam exatamente o que será desenvolvido.
 
-#### 📊 **Dados Estruturados**
-
-Os dados estruturados são organizados em **tabelas**, contendo **linhas e colunas**. Esse formato facilita consultas e manipulações através de linguagens como SQL.
-
-📌 **Exemplo:**
-
-```
-CREATE TABLE clientes (
-    id_cliente INT PRIMARY KEY,
-    nome VARCHAR(50),
-    email VARCHAR(50)
-);
-```
-
-📌 **Explicação:** A tabela `clientes` contém três colunas: `id_cliente` (chave primária), `nome` e `email`.
-
-#### 🖼️ **Dados Não Estruturados**
-
-São dados sem um formato fixo ou predefinido, como imagens, vídeos, áudios e documentos de texto.
-
-📌 **Exemplo:** Arquivo de imagem em um banco de dados:
-
-```
-CREATE TABLE fotos (
-    id_foto INT PRIMARY KEY,
-    descricao TEXT,
-    imagem BLOB
-);
-```
-
-📌 **Explicação:** A coluna `imagem` usa o tipo `BLOB`, adequado para armazenar imagens e outros arquivos binários.
-
-#### 📜 **Dados Semi-Estruturados**
-
-São dados parcialmente organizados, com alguma estrutura interna, mas sem um esquema rígido como o dos bancos relacionais. JSON e XML são exemplos comuns.
-
-📌 **Exemplo:**
-
-```
-{
-    "id": 1,
-    "produto": "Notebook",
-    "preco": 3500.00,
-    "estoque": 10
-}
-```
-
-📌 **Explicação:** Esse formato JSON é amplamente utilizado em APIs e bancos de dados NoSQL, permitindo flexibilidade na estrutura dos dados.
+Sem uma documentação bem estruturada, o desenvolvimento pode se tornar caótico, pois cada pessoa pode interpretar os requisitos de maneira diferente.
 
 ------
 
-### **🏗️ 2.3.3 Componentes de um Banco Relacional**
+## 📋 **2.3 Tipos de Documentos de Requisitos**
 
-Os bancos de dados relacionais são compostos por diversos elementos estruturais, cada um com sua função específica.
+Os principais documentos utilizados para registrar requisitos são:
 
-🔹 **Tabelas**: Estruturas que armazenam dados organizados em linhas e colunas.
-🔹 **Linhas (Registros)**: Cada linha representa um **registro único** dentro da tabela.
-🔹 **Colunas (Atributos)**: Cada coluna define um **atributo específico** do registro.
-🔹 **Chave Primária**: Identifica **de forma única** cada registro na tabela.
-🔹 **Chave Estrangeira**: Relaciona duas tabelas, garantindo a **integridade referencial**.
-🔹 **Índices**: Melhoram a eficiência das consultas, tornando a recuperação de dados mais rápida.
-🔹 **Relacionamentos**: Conectam tabelas para evitar redundância de dados e melhorar a organização.
+### 📄 **Especificação de Requisitos de Software (ERS)**
 
-📌 **Gráfico Representando um Banco de Dados Relacional:**
+- Documento detalhado contendo **todas as funcionalidades e restrições do sistema**.
+- Define o que deve ser feito e como deve ser entregue.
 
-```mermaid
-graph LR;
-    A[Tabela Clientes] -->|id_cliente PK| B[Tabela Pedidos];
-    B -->|id_produto FK| C[Tabela Produtos];
-    A -->|id_cliente PK| D[Tabela Endereços];
-```
+### 🔄 **Casos de Uso**
 
-📌 **Código para Criar o Gráfico:**
+- Descrevem **como os usuários interagem com o sistema**.
+- Representam fluxos de ações e alternativas para cada funcionalidade.
 
-```sql
--- Criando a tabela Clientes
-CREATE TABLE clientes (
-    id_cliente INT PRIMARY KEY,
-    nome VARCHAR(100),
-    email VARCHAR(100)
-);
+### 📝 **Histórias de Usuário**
 
--- Criando a tabela Produtos
-CREATE TABLE produtos (
-    id_produto INT PRIMARY KEY,
-    nome_produto VARCHAR(100),
-    preco DECIMAL(10,2)
-);
+- Utilizadas em metodologias ágeis, descrevem uma funcionalidade sob a perspectiva do usuário.
+- Exemplo: *"Como professor, quero registrar a chamada dos alunos para manter um histórico de presença."*
 
--- Criando a tabela Pedidos
-CREATE TABLE pedidos (
-    id_pedido INT PRIMARY KEY,
-    id_cliente INT,
-    id_produto INT,
-    data_pedido DATE,
-    quantidade INT,
-    FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente),
-    FOREIGN KEY (id_produto) REFERENCES produtos(id_produto)
-);
+### 🎨 **Protótipos**
 
--- Criando a tabela Endereços
-CREATE TABLE enderecos (
-    id_endereco INT PRIMARY KEY,
-    id_cliente INT,
-    rua VARCHAR(150),
-    cidade VARCHAR(100),
-    estado VARCHAR(50),
-    cep VARCHAR(15),
-    FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente)
-);
-```
+- Representações visuais do sistema antes da implementação.
+- Ajudam na validação das interfaces antes da programação.
 
-- ### ✅ **Explicação do Código**
+### 📌 **Exemplo Aplicado ao SGSA**
 
-  1. **Tabela `clientes`**:
-     - Armazena os clientes e tem `id_cliente` como **chave primária (PK)**.
-  2. **Tabela `produtos`**:
-     - Contém os produtos disponíveis, com `id_produto` como **chave primária (PK)**.
-  3. **Tabela `pedidos`**:
-     - Registra as compras dos clientes e se relaciona com:
-       - `clientes` através da **chave estrangeira (FK) `id_cliente`**.
-       - `produtos` através da **chave estrangeira (FK) `id_produto`**.
-  4. **Tabela `enderecos`**:
-     - Armazena os endereços dos clientes, referenciando `clientes(id_cliente)` como **chave estrangeira (FK)**.
+#### **Especificação de Requisitos para Registro de Chamadas**
 
-  Esse código garante um **banco de dados relacional organizado**, seguindo as **boas práticas de modelagem SQL**. 🚀📊
-
----
-
-## 🎯 2.4 Atividades Práticas
-
-### **📌 2.4.1 Em Sala de Aula**
-
-1. Criar uma tabela `clientes` no MySQL e inserir registros.
-2. Identificar dados estruturados e não estruturados em aplicativos comuns.
-
-### **🏡 2.4.2 Para Casa**
-
-1. Criar uma tabela `produtos` no MySQL e inserir dados fictícios.
-2. Pesquisar a importância de chaves primárias em bancos relacionais.
+- **Título:** Registro de Chamada
+- **Descrição:** O professor pode marcar alunos como **presente**, **ausente** ou **atrasado**.
+- Requisitos:
+  - O sistema deve listar os alunos cadastrados na turma.
+  - O professor pode alterar o status dos alunos até o final da aula.
+  - Os registros devem ser salvos automaticamente.
 
 ------
 
-## 📌 2.5 Fixação do Conteúdo
+## 🛠 **2.4 Como Criar uma Documentação de Requisitos Eficiente?**
 
-### **🖊️ Questões Dissertativas**
-
-1. Explique a diferença entre tabelas, linhas e colunas.
-2. Por que chaves primárias são essenciais para a integridade dos dados?
-
-### **📝 Questões de Múltipla Escolha**
-
-1. Qual a definição correta de uma chave primária?
-   - [ ] Aceita valores duplicados.
-   - [ ] Identifica cada registro de forma única.
-   - [ ] É opcional em tabelas relacionais.
-   - [ ] Apenas armazena dados textuais.
-2. Qual dos seguintes é um dado estruturado?
-   - [ ] Vídeo do YouTube.
-   - [ ] Planilha do Excel.
-   - [ ] Arquivo JSON.
-   - [ ] Áudio gravado.
-
-### **📋 Questões de Caixa de Seleção**
-
-1. Quais são componentes de um banco de dados relacional?
-   - [ ] Tabelas
-   - [ ] Chaves Estrangeiras
-   - [ ] Índices
-   - [ ] Streaming de Vídeo
-   - [ ] Colunas
-   - [ ] Relacionamentos
-   - [ ] JSON
-2. Quais são vantagens do armazenamento em nuvem?
-   - [ ] Backup Automático
-   - [ ] Acesso Remoto
-   - [ ] Independência de Internet
-   - [ ] Maior Segurança Contra Falhas Físicas
-   - [ ] Flexibilidade na Escala de Armazenamento
-   - [ ] Risco Zero de Perda de Dados
-   - [ ] Menor Consumo de Rede
-
-### **🔗 Questões de Associação de Colunas**
-
-1. **Tabela** ➝ ( ) Estrutura que armazena dados organizados.
-2. **Chave Primária** ➝ ( ) Identificador único de um registro.
-3. **Chave Estrangeira** ➝ ( ) Relaciona duas tabelas.
-4. **Linha** ➝ ( ) Representa um único registro.
-5. **Índices** ➝ ( ) Estruturas que otimizam a velocidade de pesquisa nos dados.
-6. **Relacionamento** ➝ ( ) Conexão entre tabelas para evitar redundância.
-
-### **⚖️ Questões de Verdadeiro ou Falso**
-
-1. Dados não estruturados podem ser facilmente organizados em tabelas.
-2. Chaves primárias permitem registros duplicados na mesma tabela.
-3. JSON é um formato de dados semi-estruturado.
-4. SQL é uma linguagem usada para manipulação de bancos de dados relacionais.
-
-- [ ] F V V V
-- [ ] V F V V
-- [ ] V F F V
-- [ ] V F V F
+Para que a documentação seja útil e compreensível, siga estas boas práticas: ✔ **Use linguagem clara e objetiva** – Evite ambiguidades. ✔ **Organize os requisitos** – Classifique-os em funcionais e não funcionais. ✔ **Use diagramas e tabelas** – Facilitam a visualização. ✔ **Mantenha o documento atualizado** – Requisitos podem mudar ao longo do projeto.
 
 ------
 
-## 🏁 2.6 Conclusão
+## 📌 **2.5 Exemplo de Documentação de Requisitos**
 
-Nesta aula, aprendemos os conceitos fundamentais de bancos de dados, exploramos os diferentes **tipos de dados**, entendemos os **componentes de um banco relacional** e praticamos a **criação de tabelas no MySQL**.
+A seguir, apresentamos um exemplo real de documentação de requisitos aplicada ao **Sistema de Gerenciamento de Sala de Aula (SGSA)**, utilizando um modelo baseado na Especificação de Requisitos de Software (ERS).
 
-📌 **Na próxima aula, avançaremos para manipulação de dados, explorando comandos SQL essenciais!** 🚀
+### 📄 **Especificação de Requisitos de Software (ERS) - Exemplo**
+
+#### **Título:** Registro de Chamadas no SGSA
+
+- **Descrição:** O professor deve ser capaz de registrar a presença dos alunos pelo sistema.
+- **Ator Principal:** Professor
+- **Stakeholders:** Professores, Coordenadores, Alunos
+- **Pré-condições:** O professor deve estar autenticado no sistema e vinculado a uma turma.
+
+#### **Fluxo Principal:**
+
+1. O professor acessa o sistema e seleciona a turma.
+2. O sistema exibe a lista de alunos da turma.
+3. O professor marca os alunos como "Presente", "Ausente" ou "Atrasado".
+4. O sistema salva automaticamente o registro da chamada.
+5. O professor pode visualizar chamadas anteriores.
+
+#### **Regras de Negócio:**
+
+- O professor só pode marcar a chamada dentro do horário da aula.
+- Os registros de chamada devem ser armazenados por no mínimo 6 meses.
+- Apenas professores vinculados a uma turma podem realizar chamadas.
+
+#### **Requisitos Funcionais:**
+
+- O sistema deve listar todos os alunos cadastrados em uma turma.
+- O professor deve poder alterar o status da chamada até o fim da aula.
+- O sistema deve permitir a consulta de chamadas anteriores.
+
+#### **Requisitos Não Funcionais:**
+
+- O sistema deve estar disponível 99% do tempo.
+- A interface deve permitir o registro da chamada em menos de 5 segundos.
+- O sistema deve suportar até 500 acessos simultâneos.
+
+Esse exemplo mostra como documentar um requisito de maneira clara e organizada, garantindo que todos os envolvidos no projeto compreendam as funcionalidades e restrições do sistema.
+
+------
+
+## 🔍 **2.6 Conclusão**
+
+A documentação de requisitos **evita falhas e garante que o desenvolvimento ocorra sem surpresas**. Ela deve ser clara, objetiva e acessível para todos os envolvidos no projeto.
+
+Agora que entendemos a importância da documentação, no próximo capítulo veremos como validar e revisar requisitos para garantir que o sistema atenda às expectativas dos usuários! 🚀
+
+------
+
+# 🎯 **Fixação do Conteúdo**
+
+## ✍️ **Questões Dissertativas**
+
+1. Explique por que a documentação de requisitos é fundamental no desenvolvimento de software.
+2. Diferencie Casos de Uso e Histórias de Usuário.
+
+## ❓ **Questões de Múltipla Escolha**
+
+1. Qual documento contém **todos os requisitos detalhados do sistema**?
+   - (A) Código-fonte
+   - (B) Especificação de Requisitos de Software
+   - (C) Protótipo
+   - (D) Relatório de testes
+2. O que um **Caso de Uso** representa?
+   - (A) Um modelo visual do sistema
+   - (B) A interação entre um usuário e o sistema
+   - (C) Um erro encontrado durante os testes
+   - (D) Uma análise de desempenho
+
+## ✅ **Questões de Caixa de Seleção**
+
+1. Quais documentos fazem parte da documentação de requisitos?
+   -  Código-fonte
+   -  Especificação de Requisitos de Software
+   -  Casos de Uso
+   -  Protótipos
+
+## 🔄 **Questões de Associação de Colunas**
+
+Associe corretamente os conceitos:
+
+1. (  ) Especificação de Requisitos
+2. (  ) Caso de Uso
+    (A) Define todas as funcionalidades do sistema.
+    (B) Descreve a interação do usuário com o sistema.
+
+## ⚖️ **Questões de Verdadeiro ou Falso**
+
+1. ( ) Um Caso de Uso descreve como o sistema deve ser programado.
+2. ( ) Histórias de Usuário são mais utilizadas em metodologias ágeis.
+
+------
+
+# 🏆 **Exercícios Práticos**
+
+## 🏛 **Atividade em Sala de Aula**
+
+1. Criar um **Caso de Uso** para um novo recurso do SGSA.
+2. Escrever uma **História de Usuário** para uma funcionalidade do sistema.
+
+## 🏡 **Atividade para Casa**
+
+1. Escolher um aplicativo do dia a dia e listar **dois tipos de documentação de requisitos** aplicados a ele.
+2. Criar um pequeno **protótipo em papel** de uma funcionalidade do SGSA.
+
+------
+
+💡 **Com esse conteúdo, você está pronto para documentar requisitos de sistemas de forma profissional e eficiente!** 🚀
