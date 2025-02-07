@@ -1,144 +1,144 @@
-# Aula 1: Introdução ao Armazenamento e Visualização de Dados
+# 📝 **Capítulo 1 - Introdução ao Levantamento e Especificação de Requisitos**
 
-## 📌 1.1 Frase Reflexiva
+> "Se você definir o problema corretamente, quase terá a solução." – Steve Jobs
 
-> "Vivemos na era da informação, mas só quem sabe armazená-la e interpretá-la corretamente consegue transformar dados em conhecimento valioso." — Autor Desconhecido
+## 📌 **1.1 Introdução**
 
-## 🏁 1.2 Introdução
+O desenvolvimento de um sistema bem-sucedido começa com um entendimento **profundo das necessidades dos usuários**. No caso de um **Sistema de Gerenciamento de Sala de Aula (SGSA)**, o objetivo é facilitar o trabalho dos professores, permitindo que eles realizem tarefas como:
 
-O armazenamento e a organização de dados são fundamentais para a sociedade moderna. Redes sociais, serviços de streaming, bancos, lojas virtuais e diversos outros sistemas utilizam **bancos de dados** para armazenar informações de maneira estruturada e acessível.
+- **Fazer chamadas dos alunos.**
+- **Registrar conteúdos abordados nas aulas.**
+- **Cadastrar e acompanhar lições de casa.**
+- **Registrar ocorrências de alunos.**
 
-Nesta primeira aula, você entenderá **o impacto dos bancos de dados no mundo digital**, os **tipos de armazenamento** existentes e a diferença entre **dados estruturados e não estruturados**. Também daremos um primeiro passo na compreensão do **MySQL**, um dos Sistemas Gerenciadores de Banco de Dados (SGBD) mais utilizados no mercado.
+Sem um bom levantamento de requisitos, o projeto pode falhar, resultando em um sistema que **não atende às necessidades dos professores** ou que **é difícil de usar**.
 
-------
+Neste capítulo, você aprenderá:
 
-## 🔍 1.3 O Impacto dos Dados no Cotidiano
-
-Os dados estão presentes em praticamente todas as nossas interações tecnológicas:
-
-- **📱 Redes Sociais**: Cada curtida, comentário e postagem são armazenados e utilizados para recomendações personalizadas.
-- **🛒 E-commerce**: Quando você acessa um site como a Amazon, o histórico de compras e visualizações é salvo para sugerir produtos relevantes.
-- **🏦 Bancos**: Seu saldo, transações e transferências são registrados em bancos de dados seguros.
-- **🏥 Saúde**: Hospitais utilizam bancos de dados para armazenar históricos de pacientes e auxiliar no diagnóstico de doenças.
-
-### ✨ Exemplo Prático
-
-Imagine que você assiste a um filme na Netflix. Com base no seu histórico de visualização, a plataforma recomenda novos filmes. Isso só é possível porque a Netflix armazena seus dados de preferência em um banco de dados altamente organizado.
+- O que são requisitos de software e sua importância.
+- Diferença entre requisitos funcionais e não funcionais.
+- Métodos para levantar requisitos corretamente, utilizando o **SGSA como estudo de caso**.
 
 ------
 
-## 💾 1.4 Tipos de Armazenamento de Dados
+## 🎯 **1.2 O que são Requisitos de Software?**
 
-### **📂 1.4.1 Armazenamento Local**
+### ✅ **Definição**
 
-Os dados são armazenados em dispositivos físicos como HDDs, SSDs ou pendrives.
+Os requisitos de software são as **necessidades e restrições** que um sistema deve atender para resolver um problema ou satisfazer seus usuários. Eles servem como uma **base para o desenvolvimento**, garantindo que o sistema atenda às expectativas dos usuários e funcione conforme o esperado.
 
-- **Exemplo:** Um arquivo de texto salvo no seu computador.
-- **✅ Vantagens:** Controle total, acesso rápido, sem dependência de internet.
-- **❌ Desvantagens:** Risco de perda por falha de hardware, dificuldade de compartilhamento remoto.
+### 🏗 **Tipos de Requisitos**
 
-### **☁️ 1.4.2 Armazenamento em Nuvem**
+1. **Requisitos Funcionais** - Definem **o que** o sistema deve fazer.
+2. **Requisitos Não Funcionais** - Definem **como** o sistema deve se comportar.
 
-Os dados são armazenados em servidores acessíveis via internet.
+### 📌 **Exemplo Prático: Sistema de Gerenciamento de Sala de Aula (SGSA)**
 
-- **Exemplo:** Fotos armazenadas no Google Drive ou iCloud.
-- **✅ Vantagens:** Acesso remoto, backup automático, escalabilidade.
-- **❌ Desvantagens:** Dependência de internet, risco de segurança cibernética.
+#### **Requisitos Funcionais:**
 
-### **🔀 1.4.3 Armazenamento Híbrido**
+- O sistema deve permitir que professores realizem chamadas dos alunos em cada aula.
+- O sistema deve possibilitar o registro de conteúdos abordados em cada aula.
+- O sistema deve permitir o cadastro de lições de casa para os alunos.
+- O sistema deve fornecer uma opção para registrar ocorrências disciplinares.
 
-Combina armazenamento local e em nuvem.
+#### **Requisitos Não Funcionais:**
 
-- **Exemplo:** Uma empresa pode armazenar arquivos confidenciais localmente e manter backup na nuvem.
-- **✅ Vantagens:** Segurança aprimorada, flexibilidade.
+- O sistema deve estar disponível 99% do tempo para evitar interrupções.
+- A interface do usuário deve ser simples e intuitiva, permitindo uso sem treinamento extenso.
+- As chamadas dos alunos devem ser registradas em menos de 5 segundos.
 
-------
-
-## 🏗️ 1.5 Conceitos Fundamentais
-
-### **🗄️ 1.5.1 Dados Estruturados e Não Estruturados**
-
-#### **📊 Dados Estruturados**
-
-São organizados em tabelas, com colunas e linhas bem definidas.
-
-| ID   | Nome        | Email                                     |
-| ---- | ----------- | ----------------------------------------- |
-| 1    | João Silva  | [joao@email.com](mailto:joao@email.com)   |
-| 2    | Maria Souza | [maria@email.com](mailto:maria@email.com) |
-
-#### **📂 Dados Não Estruturados**
-
-Não possuem um formato fixo e podem incluir imagens, áudios, vídeos e documentos.
-
-- Exemplo: Um áudio de WhatsApp ou uma foto postada em uma rede social.
+Esses requisitos ajudam a garantir que o **SGSA** atenda às necessidades dos professores, tornando suas atividades mais organizadas e eficazes.
 
 ------
 
-## 📝 1.7 Fixação do Conteúdo
+## 📊 **1.3 Métodos de Levantamento de Requisitos**
 
-### **✅ Questões de Caixa de Seleção** (mais de uma correta)
+### 🛠 **Principais Técnicas**
 
-1. Quais dos seguintes são exemplos de dados estruturados?
-   - [ ] Planilha do Excel
-   - [ ] Documento do Word
-   - [ ] Tabela de clientes
-   - [ ] Banco de dados SQL
-   - [ ] Arquivo de imagem
-   - [ ] Áudio gravado no celular
-   - [ ] Um post no Facebook
-2. Quais das opções abaixo representam vantagens do armazenamento em nuvem?
-   - [ ] Acesso remoto
-   - [ ] Maior dependência de hardware físico
-   - [ ] Backup automático
-   - [ ] Necessidade de internet para acesso
-   - [ ] Maior segurança contra falhas físicas
-   - [ ] Risco zero de perda de dados
-   - [ ] Flexibilidade para escalar armazenamento
-3. Quais características são importantes em um banco de dados relacional?
-   - [ ] Integridade referencial
-   - [ ] Organização em tabelas
-   - [ ] Uso de índices para otimização
-   - [ ] Suporte a dados não estruturados apenas
-   - [ ] Normalização para evitar redundância
-   - [ ] Ausência de chaves primárias
-   - [ ] Conectividade com aplicações externas
+🔹 **Entrevistas**: Conversas estruturadas com professores e coordenadores para entender suas necessidades no SGSA.
 
-### **📝Questões de Múltipla Escolha** (apenas uma correta)
+🔹 **Questionários**: Formulários aplicados a professores para coletar informações sobre quais funcionalidades são essenciais.
 
-1. Qual dos seguintes é um exemplo de armazenamento em nuvem?
-   - [ ] HD Externo
-   - [ ] Google Drive
-   - [ ] Pendrive
-   - [ ] SSD
-2. Qual das opções é um dado estruturado?
-   - [ ] Foto de um produto
-   - [ ] Tabela com nomes e emails
-   - [ ] Vídeo postado no Instagram
-   - [ ] Áudio gravado no celular
+🔹 **Observação**: Analisar como os professores fazem chamadas e registram conteúdos atualmente para identificar pontos de melhoria.
 
-### **🔀 Questões de Associação de Colunas**
+🔹 **Workshops**: Sessões interativas para levantar requisitos colaborativamente com educadores e administradores escolares.
 
-Associe os termos aos seus significados:
+### 📌 **Exemplo Prático**
 
-1. **Armazenamento Local** - ( ) Servidores acessíveis pela internet
-2. **Armazenamento em Nuvem** - ( ) Dispositivos físicos como SSDs e HDDs
-3. **Dados Estruturados** - ( ) Informal, sem organização fixa
-4. **Dados Não Estruturados** - ( ) Organizado em tabelas com colunas e linhas
+Para o **SGSA**, podemos aplicar essas técnicas da seguinte forma:
 
-### **✍️ Questões Dissertativas**
+- **Entrevistar professores** para entender suas dificuldades ao fazer chamadas e registrar conteúdos.
+- **Observar** como ocorrem as chamadas em salas de aula tradicionais.
+- **Criar um questionário** perguntando quais funcionalidades são mais desejadas.
 
-1. Explique a diferença entre armazenamento local, na nuvem e híbrido.
-2. Por que dados estruturados são mais fáceis de processar do que dados não estruturados?
+Essas técnicas garantem que os requisitos levantados correspondam às necessidades reais dos usuários do sistema.
 
-### ⚖️ **Questões de Verdadeiro ou Falso**
+------
 
-1. O armazenamento em nuvem permite acesso remoto e backup automático.
-2. Dados estruturados são armazenados apenas em arquivos de texto sem formatação.
-3. Bancos de dados relacionais utilizam tabelas para organizar informações.
-4. Arquivos de vídeo e áudio são considerados dados estruturados.
+## 🔍 **1.4 Conclusão**
 
-- [ ] V F V V
-- [ ] F V V F
-- [ ] V V F F
-- [ ] F F V V
+O levantamento e especificação de requisitos são **passos cruciais** no desenvolvimento de um sistema como o **SGSA**. Com técnicas como entrevistas, questionários e observação, podemos definir com clareza **o que será desenvolvido** e **quais problemas serão resolvidos**.
+
+No próximo capítulo, exploraremos como documentar esses requisitos de forma eficiente! 🚀
+
+------
+
+# 🎯 **Fixação do Conteúdo**
+
+## ✍️ **Questões Dissertativas**
+
+1. Explique a diferença entre requisitos funcionais e não funcionais, aplicando ao SGSA.
+2. Qual a importância do levantamento de requisitos antes do desenvolvimento de um aplicativo como o SGSA?
+
+## ❓ **Questões de Múltipla Escolha**
+
+1. Qual das alternativas representa um requisito **não funcional** para o SGSA?
+   - (A) O professor pode registrar conteúdos das aulas.
+   - (B) O sistema deve suportar 500 acessos simultâneos.
+   - (C) O professor pode cadastrar lições de casa.
+   - (D) O sistema permite o registro de chamadas.
+2. Qual técnica de levantamento de requisitos envolve a aplicação de questionários a professores?
+   - (A) Entrevistas
+   - (B) Observação
+   - (C) Workshops
+   - (D) Questionários
+
+## ✅ **Questões de Caixa de Seleção**
+
+1. Quais são técnicas de levantamento de requisitos?
+   -  Entrevistas
+   -  Prototipação
+   -  Observação
+   -  Código-fonte
+
+## 🔄 **Questões de Associação de Colunas**
+
+Associe corretamente os conceitos:
+
+1. (  ) Levantamento de Requisitos
+2. (  ) Especificação de Requisitos
+    (A) Coletar informações sobre o que os usuários precisam.
+    (B) Definir detalhadamente como os requisitos serão implementados.
+
+## ⚖️ **Questões de Verdadeiro ou Falso**
+
+1. ( ) Histórias de Usuário são um tipo de prototipação.
+2. ( ) O levantamento de requisitos só pode ser feito por entrevistas.
+
+------
+
+# 🏆 **Exercícios Práticos**
+
+## 🏛 **Atividade em Sala de Aula**
+
+1. Criar um questionário com **cinco perguntas** para levantar requisitos do SGSA.
+2. Realizar uma entrevista simulada com um colega sobre as necessidades do SGSA.
+
+## 🏡 **Atividade para Casa**
+
+1. Escolher um sistema educacional existente e listar **três requisitos funcionais e três não funcionais**.
+2. Criar um **caso de uso simplificado** para um dos requisitos identificados.
+
+------
+
+💡 **Este capítulo cobre toda a base necessária para iniciar um projeto de software, garantindo que os requisitos estejam bem definidos e alinhados com as necessidades dos usuários do SGSA!** 🚀
