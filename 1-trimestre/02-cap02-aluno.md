@@ -68,7 +68,11 @@ Os principais documentos utilizados para registrar requisitos são:
 
 ## 🛠 **2.4 Como Criar uma Documentação de Requisitos Eficiente?**
 
-Para que a documentação seja útil e compreensível, siga estas boas práticas: ✔ **Use linguagem clara e objetiva** – Evite ambiguidades. ✔ **Organize os requisitos** – Classifique-os em funcionais e não funcionais. ✔ **Use diagramas e tabelas** – Facilitam a visualização. ✔ **Mantenha o documento atualizado** – Requisitos podem mudar ao longo do projeto.
+Para que a documentação seja útil e compreensível, siga estas boas práticas: 
+- ✔ **Use linguagem clara e objetiva** – Evite ambiguidades.
+- ✔ **Organize os requisitos** – Classifique-os em funcionais e não funcionais.
+- ✔ **Use diagramas e tabelas** – Facilitam a visualização.
+- ✔ **Mantenha o documento atualizado** – Requisitos podem mudar ao longo do projeto.
 
 ------
 
