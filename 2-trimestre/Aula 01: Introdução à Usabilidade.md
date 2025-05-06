@@ -169,6 +169,6 @@ A usabilidade está em tudo: nos apps que usamos, nos sites que acessamos e nos 
 
 ## 🧭 Paginação
 
-#### 🏠 [Voltar ao Início](https://chatgpt.com/g/g-p-679fd21eb65c8191bf6e8265d293c288-uc21/README.md)
+#### 🏠 [Voltar ao Início](<../README.md>)
 
-#### ⏩ [Próxima Aula: Heurísticas de Usabilidade](https://chatgpt.com/g/g-p-679fd21eb65c8191bf6e8265d293c288-uc21/c/aula02_heuristicas.md)
+#### ⏩ [Próxima Aula: Heurísticas de Usabilidade](<./Aula 02: Heurísticas de Nielsen.md>)

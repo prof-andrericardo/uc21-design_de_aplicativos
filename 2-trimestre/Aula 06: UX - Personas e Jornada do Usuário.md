@@ -145,8 +145,8 @@ Grupos de até 3 alunos.
 
 ## 🧭 Paginação
 
-#### ⏪ [Aula 06 – Testes com Tecnologias Assistivas](https://chatgpt.com/g/g-p-679fd21eb65c8191bf6e8265d293c288-uc21/c/Aula06 Testes com Tecnologias Assistivas.md)
+#### ⏪ [Aula 05: Testes com Tecnologias Assistivas](<./Aula 05: Testes com Tecnologias Assistivas.md>)
 
-#### 🏠 [Início](https://chatgpt.com/g/g-p-679fd21eb65c8191bf6e8265d293c288-uc21/README.md)
+#### 🏠 [Voltar ao Início](<../README.md>)
 
-#### ⏩ [Próxima Aula: Feedback dos Protótipos Interativos](https://chatgpt.com/g/g-p-679fd21eb65c8191bf6e8265d293c288-uc21/c/Aula08 Feedback dos Protótipos.md)
+#### ⏩ [Próxima Aula: Aplicando Usabilidade ao SGSA](<./Aula 07: Aplicando Usabilidade ao SGSA.md>)

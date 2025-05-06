@@ -165,8 +165,8 @@ Grupos que já estão desenvolvendo o protótipo.
 
 ## 🧭 Paginação
 
-#### ⏪ [Aula 07 – Personas e Jornada do Usuário](https://chatgpt.com/g/g-p-679fd21eb65c8191bf6e8265d293c288-uc21/c/Aula07 Personas e Jornada do Usuario.md)
+#### ⏪ [Aula 06: UX - Personas e Jornada do Usuário](<./Aula 06: UX - Personas e Jornada do Usuário.md>)
 
-#### 🏠 [Início](https://chatgpt.com/g/g-p-679fd21eb65c8191bf6e8265d293c288-uc21/README.md)
+#### 🏠 [Voltar ao Início](<../README.md>)
 
-#### ⏩ [Próxima Aula: Preparação para Avaliação Final](https://chatgpt.com/g/g-p-679fd21eb65c8191bf6e8265d293c288-uc21/c/Aula09 Revisao Preparatoria.md)
+#### ⏩ [Próxima Aula: Preparação para Avaliação Final](<../README.md>)

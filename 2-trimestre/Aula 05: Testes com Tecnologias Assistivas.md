@@ -73,8 +73,8 @@ Identificar problemas de acessibilidade em um protótipo de interface.
 
 ## 🧭 Paginação
 
-#### ⏪ [Aula 05 – Protótipos Interativos](https://chatgpt.com/g/g-p-679fd21eb65c8191bf6e8265d293c288-uc21/c/Aula05 Protótipos Interativos.md)
+#### ⏪ [Aula 04: Acessibilidade Digital](<./Aula 04: Acessibilidade Digital.md>)
 
-#### 🏠 [Início](https://chatgpt.com/g/g-p-679fd21eb65c8191bf6e8265d293c288-uc21/README.md)
+#### 🏠 [Voltar ao Início](<../README.md>)
 
-#### ⏩ [Próxima Aula: Apresentações e Feedback AC2](https://chatgpt.com/g/g-p-679fd21eb65c8191bf6e8265d293c288-uc21/c/Aula07 Apresentacoes AC2.md)
+#### ⏩ [Próxima Aula: UX - Personas e Jornada do Usuário](<./Aula 06: UX - Personas e Jornada do Usuário.md>)

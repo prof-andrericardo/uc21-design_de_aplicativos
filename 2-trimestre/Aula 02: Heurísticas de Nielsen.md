@@ -123,8 +123,8 @@ Avançaremos para a **Avaliação Heurística na prática**, aprendendo a fazer 
 
 ## 🧭 Paginação
 
-#### ⏪ [Voltar à Aula 01 – Introdução à Usabilidade](https://chatgpt.com/g/g-p-679fd21eb65c8191bf6e8265d293c288-uc21/c/Aula01 Usabilidade.md)
+#### ⏪ [Voltar à Aula 01 – Introdução à Usabilidade](<./Aula 01: Introdução à Usabilidade.md>)
 
-#### 🏠 [Início](https://chatgpt.com/g/g-p-679fd21eb65c8191bf6e8265d293c288-uc21/README.md)
+#### 🏠 [Início](<../README.md>)
 
-#### ⏩ [Próxima Aula – Avaliação Heurística](https://chatgpt.com/g/g-p-679fd21eb65c8191bf6e8265d293c288-uc21/c/Aula03 Avaliacao Heuristica.md)
+#### ⏩ [Próxima Aula – Avaliação Heurística](<./Aula 03: Avaliação Heurística.md>)

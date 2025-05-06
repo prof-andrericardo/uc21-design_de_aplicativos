@@ -145,8 +145,8 @@ Duplas ou trios.
 
 ## 🧭 Paginação
 
-#### ⏪ [Aula 03 – Avaliação Heurística](https://chatgpt.com/g/g-p-679fd21eb65c8191bf6e8265d293c288-uc21/c/Aula03 Avaliação Heurística.md)
+#### ⏪ [Aula 03 – Avaliação Heurística](<./Aula 03: Avaliação Heurística.md>)
 
-#### 🏠 [Início](https://chatgpt.com/g/g-p-679fd21eb65c8191bf6e8265d293c288-uc21/README.md)
+#### 🏠 [Voltar ao Início](<../README.md>)
 
-#### ⏩ [Próxima Aula: Protótipos Interativos](https://chatgpt.com/g/g-p-679fd21eb65c8191bf6e8265d293c288-uc21/c/Aula05 Protótipos Interativos.md)
+#### ⏩ [Próxima Aula: Testes com Tecnologias Assistivas](<./Aula 05: Testes com Tecnologias Assistivas.md>)

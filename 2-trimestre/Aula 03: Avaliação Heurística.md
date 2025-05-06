@@ -143,8 +143,8 @@ Duplas ou trios
 
 ## 🧭 Paginação
 
-#### ⏪ [Aula 02 – Princípios de Design e UX](https://chatgpt.com/g/g-p-679fd21eb65c8191bf6e8265d293c288-uc21/c/Aula02 Principios UX.md)
+#### ⏪ [Aula 02 – Princípios de Design e UX](<./Aula 02: Heurísticas de Nielsen.md>)
 
-#### 🏠 [Início](https://chatgpt.com/g/g-p-679fd21eb65c8191bf6e8265d293c288-uc21/README.md)
+#### 🏠 [Início](../README.md)
 
-#### ⏩ [Próxima Aula: Acessibilidade Digital](https://chatgpt.com/g/g-p-679fd21eb65c8191bf6e8265d293c288-uc21/c/Aula04 Acessibilidade Digital.md)
+#### ⏩ [Próxima Aula: Acessibilidade Digital](./Aula%2004:%20Acessibilidade%20Digital.md)
